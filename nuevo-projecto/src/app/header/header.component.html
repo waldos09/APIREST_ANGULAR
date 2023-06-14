@@ -1,0 +1,23 @@
+<!--<p>header works!</p>-->
+
+<style>
+  body {
+      background-color: #35465E; /* Color de fondo deseado */
+    }
+</style>
+
+<nav class="bg-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="flex h-16 items-center justify-between">
+      <div class="flex items-center">
+        <a class="bg-gradient-to-r from-teal-400 to-lime-200 bg-clip-text text-3xl font-bold text-transparent" href="#">API's Angular</a>
+      </div>
+      <div class="flex">
+        <a class="rounded-md px-3 py-2 font-semibold text-gray-300 hover:bg-gray-700 hover:text-white" href="#" [routerLink]="['/home']" >Home</a>
+        <a class="rounded-md px-3 py-2 font-semibold text-gray-300 hover:bg-gray-700 hover:text-white" [routerLink]="['/frasesForm']" href="#">Add Phrase</a>
+        <a class="rounded-md px-3 py-2 font-semibold text-gray-300 hover:bg-gray-700 hover:text-white" [routerLink]="['/frases']" href="#">Edit Phrase</a>
+        <a class="rounded-md px-3 py-2 font-semibold text-gray-300 hover:bg-gray-700 hover:text-white " [routerLink]="['/conversor']" href="#">Converter</a>
+      </div>
+    </div>
+  </div>
+</nav>

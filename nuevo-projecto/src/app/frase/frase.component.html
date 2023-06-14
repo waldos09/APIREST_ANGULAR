@@ -1,0 +1,40 @@
+<div class="relative overflow-x-auto bg-gray-900 p-7 rounded-lg m-6">
+  <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+      <tr>
+        <th scope="col" class="px-6 py-3">
+          Id
+        </th>
+        <th scope="col" class="px-6 py-3">
+          Autor
+        </th>
+        <th scope="col" class="px-6 py-3">
+          Frase
+        </th>
+        <th scope="col" class="px-6 py-3">
+        </th>
+        <th scope="col" class="px-6 py-3">
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700" *ngFor="let f of listaDeFrases">
+        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          {{f.idFrase}}
+        </th>
+        <td class="px-6 py-4">
+          {{f.texto}}
+        </td>
+        <td class="px-6 py-4">
+          {{f.autor}}
+        </td>
+        <td class="px-6 py-4 flex justify-center">
+          <button type="button" name="editar" [routerLink]="['frasesForm/id',f.idFrase]" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Edit</button>
+        </td>
+        <td class="px-6 py-4">
+          <button type="button" name="eliminar" (click)="delete(f)" class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">DELETE</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

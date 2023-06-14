@@ -1,0 +1,14 @@
+<!--<p>frase-form works!</p>-->
+  <form action="" class="m-10 mt-10 rounded-lg bg-gradient-to-r from-slate-500 to-[#83AEEB] p-2">
+    <div class="mb-2 p-3">
+      <label class="mb-2 block font-sans text-2xl font-extrabold text-gray-900" for="Autor">Autor</label>
+      <input type="text" name='autor' id='autor' [(ngModel)]='texto.autor' class="w-full rounded border border-slate-950 bg-gradient-to-r from-slate-500/60 to-slate-400 caret-emerald-800 shadow-xl" />
+    </div>
+    <div class="-mt-6 mb-2 p-3">
+      <label for="Frase" class="mb-2 block font-sans text-2xl font-extrabold text-gray-900">Frase</label>
+      <textarea name="frase" id="frase" [(ngModel)]='texto.texto' cols="30" rows="10" class="w-full rounded border border-slate-950 bg-gradient-to-r from-slate-500/60 to-slate-400 caret-emerald-800 shadow-xl"></textarea>
+    </div>
+    <div class="flex justify-center p-2">
+      <button class="rounded-xl border border-slate-950 bg-blue-600/50 p-2 px-20 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-blue-900">Submit</button>
+    </div>
+    </form>
